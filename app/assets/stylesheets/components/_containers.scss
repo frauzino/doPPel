@@ -18,7 +18,7 @@
 
 .photo-container {
   width: 100%;
-  height: 35%;
+  height: 60vh;
   display: flex;
   gap: 2px;
 }
@@ -72,7 +72,23 @@
 .profile-container {
   width: 100%;
 display: flex;
-justify-content: space-evenly;
+justify-content: space-between;
+gap: 50px;
+}
+
+.profile-buttons-container {
+  width: 60%;
+  border: solid 1px $teal;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 31%;
+  gap: 20px;
+  padding:40px;
+  height: fit-content;
 }
 
 .log-in-form-container {

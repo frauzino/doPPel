@@ -24,7 +24,7 @@
       <h4><%= "E-mail: #{current_user.email}" %></h4>
     </div>
   </div>
-  <div class="profile-buttons">
+  <div class="profile-buttons-container">
     <% if @doppelganger.nil? %>
       <%= link_to "Create Listing", new_doppelganger_path, class: "button-53" %>
     <% else %>

@@ -30,7 +30,8 @@ class DoppelgangersController < ApplicationController
       {
         lat: doppel.latitude,
         lng: doppel.longitude,
-        info_window_html: render_to_string(partial: "info_window", locals: { doppelganger: doppel })
+        info_window_html: render_to_string(partial: "info_window", locals: { doppelganger: doppel }),
+        # marker_html: render_to_string(partial: "marker")
       }
     end
   end

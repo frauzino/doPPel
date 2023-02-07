@@ -1,4 +1,13 @@
-<h2><%= link_to doppelganger.name, doppelganger_path(doppelganger) %></h2>
-<p><%= doppelganger.address %></p>
-<p><%= doppelganger.age %> years old</p>
-<p>$ <%= doppelganger.rate %>/hour</p>
+<div class="popup-photo">
+  <% if doppelganger.photo.key != nil %>
+    <%= cl_image_tag doppelganger.photo.key %>
+  <% else %>
+    <%= image_tag doppelganger.seed_photo %>
+  <% end %>
+</div>
+<div class="popup-info">
+  <h6><%= link_to doppelganger.name, doppelganger_path(doppelganger) %></h6>
+  <p><%= doppelganger.address %></p>
+  <p><%= doppelganger.age %> years old</p>
+  <p>$ <%= doppelganger.rate %>/hour</p>
+</div>
