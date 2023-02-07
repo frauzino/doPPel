@@ -27,6 +27,18 @@
   width: 50%;
 }
 
+.basic-form-container {
+  width: 60%;
+  border: solid 1px $teal;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  .mb-3 {
+    font-size: 20px;
+    color: $teal;
+  }
+}
+
 .booking-form-container {
   border: 1px solid $teal;
   border-radius: 8px;
