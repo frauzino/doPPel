@@ -14,7 +14,7 @@
           <li class="nav-item">
             <%# <%= link_to "Bookings", bookings_path, class: "nav-link" %>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown", style="cursor: pointer">
             <% if Doppelganger.where(user_id: current_user).first.nil? %>
               <%= image_tag "placeholder.jpg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <% elsif Doppelganger.where(user_id: current_user).first.photo.key.nil? %>

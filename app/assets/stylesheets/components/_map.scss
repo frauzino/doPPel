@@ -44,3 +44,12 @@
   display: flex;
   justify-content: space-around;
 }
+
+.mapboxgl-ctrl-top-right .mapboxgl-ctrl {
+  float: none !important;
+  margin: 0px !important;
+}
+
+.mapboxgl-ctrl-geocoder {
+  width: 100%;
+}
