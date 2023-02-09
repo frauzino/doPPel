@@ -3,7 +3,7 @@ class Booking < ApplicationRecord
   belongs_to :user
   # has_one :agent, through: :doppelganger, source: :user
 
-  validates :start_date, presence: true, comparison: { greater_than_or_equal_to: Time.now } # <- that's 30 mins from moment of booking
+  validates :start_date, presence: true, comparison: { greater_than: Date.today }
   validates :end_date, presence: true, comparison: { greater_than: :start_date }
   validates :address, presence: true
   validates :status, presence: true
